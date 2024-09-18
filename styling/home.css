@@ -70,7 +70,7 @@ h1{
 
     .heading{
         top:300px;
-        left:450px;
+        left:400px;
     }
 }
 
@@ -127,7 +127,15 @@ h1{
 
 @media (min-width:1024px){
     .heading{
-        left:400px;
+        left:350px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    h2{
+        font-size:35px;
     }
 }
 
