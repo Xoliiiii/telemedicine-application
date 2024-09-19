@@ -1,6 +1,76 @@
+h1{
+    color:rgb( 0, 184, 42);
+}
+
+a{
+    text-decoration: none;
+    font-weight:bolder;
+    color:black;
+}
+
+hr{
+width:400px;
+border-top:4px rgb( 0, 184, 42) solid;
+margin-left: 10px;
+}
+
+h2{
+    margin-top:10px;
+    margin-left:10px;
+}
+
+.doctorPre{
+    margin-right:100px;
+}
 .hero-section{
     background-image:url(https://i.ibb.co/jhZPkw0/virtual-Consultation.jpg);
     background-repeat:no-repeat;
     background-size:cover;
-    height: 600px;  
+    height:400px;
 }
+
+.heading{
+    position:absolute;
+    left:400px;
+    top:250px;
+}
+
+.docSearch{
+    position:absolute;
+    left:400px;
+    top:350px;
+
+}
+
+.btnSearch{
+    width: 150px;
+    height: 30px;
+    border-radius:5px;
+    border:none;
+    background-color:rgb( 0, 184, 42);
+    transition: all qms ease-in-out;
+}
+
+.btnSearch:hover{
+    background-color:black;
+    color:rgb( 0, 184, 42);
+}
+
+.doctorImg{
+    max-width:200px;
+    height:auto;
+    border-radius:20px;
+}
+
+.doctors{
+    margin-left:100px
+}
+
+#specialty{
+    margin-right:100px;
+    width:250px;
+    height:30px;
+}
+
+
+
