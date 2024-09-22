@@ -22,10 +22,9 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="#">Find a doctor</a>
-                  <a class="nav-link" href="#">Appointment scheduling</a>
-                  <a class="nav-link" href="#">Messaging</a>
-                  <a class="nav-link" href="#">Profile</a>
+                  <a class="nav-link" href="appointment.html">Appointment scheduling</a>
+                  <a class="nav-link" href="messaging.html">Messaging</a>
+                  <a class="nav-link" href="profile.html">Profile</a>
                 </div>
               </div>
             </div>
@@ -36,7 +35,12 @@
       <div class="departmentSearch">
         <div class="row">
           <div class="col-6">
-            <input type="text" name="department" id="department">
+            <select class="specialty" id="specialty">
+              <option value="Cardiology">Cardiology</option>
+              <option value="Pediatrics">Pediatrics</option>
+              <option value="Primary Care">Primary Care</option>
+              <option value="Surgery">Surgery</option>
+          </select>
           </div>
           <div class="col-6">
             <button>Search</button>
