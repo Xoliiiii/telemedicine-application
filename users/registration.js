@@ -9,9 +9,20 @@
 // }
 
 
-function passwordCheck(event){
-    const firstPassword = document.getElementById("firstPassword").value
-    const confirmedPassword =document.getElementById("confirmedPass").value
+function formCheck(event){
+    const email = document.getElementById("email").value.trim;
+    const firstPassword = document.getElementById("firstPassword").value;
+    const confirmedPassword =document.getElementById("confirmedPass").value;
+
+    //Basic email regex pattern
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    //validate email format
+    if (!emailPattern,text(email)){
+        alert('Please enter a valid email address');
+        event.preventDefault()
+        return false;
+    }
 
     if(firstPassword.length !== 8 && confirmedPass.length !==8){
         alert('Password must be exactly 8 characters');
