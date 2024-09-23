@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>TeleMed | Register</title>
+</head>
+<body>
+   <form return onsubmit="passwordCheck(event)">
+    <div class="row">
+        <div class="col-6">
+            <input type="text" name="First Name" placeholder="Enter your first name" id="fname" required>
+        </div>
+        <div class="col-6">
+            <input type="text" name="Last Name" placeholder="Enter your last name" id="lname" required>
+        </div>
+    </div>
+    <input type="email" name="email" placeholder="user@example.com" required>
+    <div class="row">
+        <div class="col-6">
+            <input type="password" name="password" required placeholder="Password" id="firstPassword" size="8">
+            <br>
+            <!--Button to toggle between seeing a password and not seeing a password-->
+           <!-- <button type="button" onclick="togglePassword(this)">Show/Hide</button> -->
+        </div>
+        <div class="col-6">
+            <input type="password" name="Confirmed password" required placeholder="Confirm password" id="confirmedPass" size="8" max="1924-12-31">
+            <br/>
+            <!--Button to toggle between seeing a password and not seeing a password-->
+            <!-- <button type="button"onclick="togglePassword(this)">Show/Hide</button> -->
+        </div>
+    </div>
+    <br/>
+    
+    <div class="row">
+        <div class="col-4">
+            <input type="number" name="age" id="age" placeholder="Age">
+        </div>
+        <div class="col-4 gender">
+            <div class="row">
+                <div class="col-3">
+                    <input type="radio" name="female" id="female" ><label>Female</label >
+                </div>
+                <div class="col-3">
+                    <input type="radio" name="male" id="male"><label>Male</label >
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <select>
+                <option value="South Africa">South Africa</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Angola">Angola</option>
+                <option value="Seychelles">Seychelles</option>
+            </select>
+        </div>
+    </div>
+    <input type="checkbox" name="terms" id="terms" required>
+    <label>I accept the <a href="#">terms and conditions</a></label>
+    <button class="submit">Register</button>
+   </form>  
+   
+       <!--Javascript-->
+       <script src="registration.js"></script> 
+</body>
+</html>
